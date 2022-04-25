@@ -1,0 +1,18 @@
+.btn{
+    background-color: #009344;
+    color: #fff;
+    padding: 24px 77px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn:hover{
+   opacity: 0.6;
+}
+
+.btn:active{
+    opacity: 0.8;
+}

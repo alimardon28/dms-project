@@ -3,9 +3,14 @@
 
     &__hero{
         display: flex;
-        justify-content: space-between;
-        padding: 4px 0px;
-        margin: 0;
+        padding:0px;
+        margin:0;
+        background-image: url(/images/33.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
     }
 
     &__hero-left{
@@ -34,7 +39,7 @@
     &__hero-left--list{
         display: flex;
         list-style: none;
-        justify-content: space-between;
+        justify-content:start;
         margin: 0;
         padding:41px 0px 0px 0px;
     }
@@ -42,6 +47,10 @@
     &__hero-left--list-item{
         display: flex;
         flex-direction: column;
+    }
+
+    &__hero-left--list-item + &__hero-left--list-item{
+        margin-left: 30px;
     }
 
     &__hero-left--list-item-img{
@@ -59,15 +68,19 @@
         padding-top:1px;
     }
 
+    &__buttonBox{
+        padding-top: 33px;
+        padding-bottom: 13px;
+    }
     &__hero-right{
        margin: 0;
        padding: 0;
     }
 
-    &__hero-right--img{
-        object-fit: cover;
-        height: 100%;
-    }
+    // &__hero-right--img{
+    //     object-fit: cover;
+    //     height: 100%;
+    // }
 
     @media screen and (max-width:769px) {
         &__hero-left--heading{
@@ -89,7 +102,42 @@
             font-size: 13px;
             line-height: 16px;
         }
+
+        &__buttonBox-btn{
+             padding: 16px 40px;
+        }
     }
+
+    // @media screen and (max-width:667px) {
+    //     &__hero{
+    //         flex-direction: column;
+    //     }
+    //     &__hero-left--heading{
+    //         font-size: 30px;
+    //         line-height: 40px;
+    //     }
+    //     &__hero-left--desc{
+    //         font-size: 19px;
+    //         line-height: 22px;
+    //     }
+
+    //     &__hero-left--list-item-img{
+    //         width: 44px;
+    //         height: 44px;
+    //     }
+
+    //     &__hero-left--list-item-span{
+    //         font-weight: 400;
+    //         font-size: 13px;
+    //         line-height: 16px;
+    //     }
+
+    //     &__buttonBox-btn{
+    //          padding: 16px 40px;
+    //     }
+    // }
+
+
 
     @media screen and (max-width:426px) {
         &__hero-left--heading{
@@ -120,8 +168,12 @@
             font-size: 10px;
         }
 
+        &__buttonBox-btn{
+            padding: 14px 28px;
+       }
+
         &__hero-right--img{
-            width: 340px;
+            width: 100%;
             height: 100%;
         }
     }
