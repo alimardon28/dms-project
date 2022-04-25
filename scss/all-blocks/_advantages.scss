@@ -1,0 +1,144 @@
+.advantages {
+  padding-top: 107px;
+  margin: 0;
+
+  &__hero {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__hero--heading {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  &__hero--list {
+    list-style: none;
+    padding: 86px 0px 0px 0px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__hero--list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  &__hero--list-item:nth-child(odd) {
+    padding-bottom: 105px;
+  }
+
+  &__hero--list-item img {
+    width: 153px;
+    height: 153px;
+    border: 3px dashed rgb(95, 246, 95);
+    border-radius: 50%;
+    padding: 2px;
+  }
+
+  &__hero--list-item--title {
+    margin: 0;
+    padding-top: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__hero--list-item--desc {
+    padding-top: 8px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  &__hero-imagesBox {
+    margin: 0;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  &__hero-imagesBox-img {
+    text-align: center;
+    width: 60%;
+    height: 40%;
+  }
+
+  @media screen and (max-width: 769px) {
+    &__hero--list {
+      padding: 56px 0px 0px 0px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__hero--list-item {
+      margin-bottom: 20px;
+    }
+
+    &__hero--list-item:nth-child(odd) {
+      padding: 0;
+      margin-left: 20px;
+    }
+
+    &__hero--list-item:nth-child(even) {
+      padding: 0;
+      margin-left: 20px;
+    }
+
+    &__hero-imagesBox-img {
+      width: 87%;
+      height: 67%;
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    &__hero--heading {
+      font-size: 26px;
+      line-height: 34px;
+      text-align: center;
+    }
+    &__hero--list {
+      padding: 26px 0px 0px 0px;
+    }
+
+    &__hero--list-item {
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+
+    &__hero--list-item img {
+      width: 203px;
+      height: 203px;
+    }
+
+    &__hero--list-item--title {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    &__hero--list-item--desc {
+      line-height: 20px;
+      font-size: 20px;
+    }
+
+    &__hero-imagesBox {
+      padding-top: 45px;
+    }
+
+    &__hero-imagesBox-img {
+      width: 100%;
+      height: 70%;
+    }
+  }
+}
