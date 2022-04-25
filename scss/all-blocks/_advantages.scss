@@ -75,6 +75,51 @@
     height: 40%;
   }
 
+  &__bottom {
+    background-color: #009344;
+    color: #fff;
+    margin-top: 225px;
+  }
+
+  &__bottom-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 62px 0px;
+  }
+
+  &__bottom-list--item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    border-left: 2px solid #fff;
+    padding-left: 16px;
+  }
+
+  &__bottom-list--item-span {
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 64px;
+    font-feature-settings: "liga" off;
+    color: #fff;
+  }
+
+  &__bottom-list--item-desc {
+    margin: 0;
+    padding-top: 12px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    font-feature-settings: "liga" off;
+    color: #fff;
+  }
+
   @media screen and (max-width: 769px) {
     &__hero--list {
       padding: 56px 0px 0px 0px;
@@ -99,6 +144,22 @@
     &__hero-imagesBox-img {
       width: 87%;
       height: 67%;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    &__bottom {
+      margin-top: 85px;
+    }
+
+    &__bottom-list {
+      display: flex;
+      align-items: flex-start;
+      justify-content: start;
+      flex-direction: column;
+    }
+    &__bottom-list--item {
+      border-bottom: 2px solid #fff;
     }
   }
 
