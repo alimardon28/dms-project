@@ -1,0 +1,82 @@
+.lines {
+  padding-top: 68px;
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 41px 0px 0px 0px;
+  }
+
+  &__list-item {
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  &__list-item--box {
+    padding: 48px 112px;
+    position: relative;
+    border: 2px dashed rgb(7, 213, 7);
+    background-color: #bfe4d0;
+  }
+  &__list-item--box-span {
+    position: absolute;
+    top: -16%;
+    left: 8%;
+    padding: 4px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #009344;
+  }
+
+  &__list-item--box-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2d3032;
+  }
+
+  @media screen and (max-width: 769px) {
+    &__heading {
+      font-size: 30px;
+      line-height: 38px;
+    }
+    &__list-item--box {
+      padding: 36px 70px;
+    }
+  }
+  @media screen and (max-width: 426px) {
+    &__heading {
+      font-size: 28px;
+      line-height: 30px;
+    }
+    &__list-item--box {
+      padding: 36px 100px;
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    &__heading {
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__list-item--box {
+      padding: 30px 90px;
+    }
+    &__list-item--box-desc {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
