@@ -16,3 +16,19 @@
 .btn:active{
     opacity: 0.8;
 }
+
+.button{
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #009344;
+    outline: none;
+    margin-top: 22px;
+}
+
+.button:hover{
+    opacity: 0.6;
+}
+
+.button:active{
+    opacity: 0.8;
+}
