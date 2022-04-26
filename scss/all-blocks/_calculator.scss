@@ -1,0 +1,184 @@
+.calculator{
+    background-color: #C1E3CF;
+    padding-top: 99px;
+
+    &__onlayn{
+       display: flex;
+       flex-direction: column;
+       padding-top: 72px;
+       padding-bottom: 30px;
+       margin: 0;
+    }
+
+    &__onlayn-moto{
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+    }
+    &__onlayn-moto--top-heading{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        margin: 0;
+        padding: 0;
+    }
+    &__onlayn-moto--top-desc{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 0;
+        padding-top: 69px;
+    }
+    &__onlayn-moto--img{
+        width: 350px;
+        height: 203px;
+    }
+    &__onlayn-list{
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       list-style: none;
+       margin: 0;
+       padding: 53px 0px 0px 0px;
+    }
+    &__onlayn-list--item{
+       display: flex;
+       flex-direction: column;
+    }
+
+    &__onlayn-list--item-desc{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0;
+        padding-bottom:46px;
+    }
+
+    &__onlayn-list--item-button{
+        margin-bottom: 46px;
+        background-color: rgba(0, 0, 0, 0);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #2D3032;
+        border: 1px solid #2D3032;
+        padding: 8px 10px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    &__onlayn-list--item-buttonBox{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+
+    &__onlayn-list--item-buttonBox > &__onlayn-list--item-button{
+        padding: 8px 67px;
+    }
+
+    &__onlayn-list--item-buttonBoxes > &__onlayn-list--item-button{
+        padding: 8px 38px;
+    }
+
+    &__onlayn-list--item-elements{
+        border: 1px solid #2D3032;
+        padding: 14px 48px;
+    }
+
+    &__onlayn-list--item-elements > &__onlayn-list--item-desc{
+          padding-bottom:18px;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+    }
+
+    &__onlayn-list--item-heading{
+       text-align: center;
+    }
+
+    &__onlayn-list--item-bottonDiv{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__onlayn-list--item-bottonDiv > &__onlayn-list--item-button{
+      margin-bottom: 18px;
+    }
+
+
+    @media screen and (max-width:769px) {
+        &__onlayn{
+            padding-top: 38px;
+        }
+        &__onlayn-moto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__onlayn-moto--img{
+            text-align: center;
+            padding-top: 20px;
+        }
+        &__onlayn-moto--top-heading{
+            font-size: 30px;
+            line-height: 38px;
+        }
+        &__onlayn-moto--top-desc{
+            font-size: 21px;
+            line-height: 24px;
+            padding-top: 39px;
+        }
+
+        &__onlayn-list--item-desc{
+            font-size:18px;
+            line-height:19px;
+            padding-bottom:36px;
+        }
+
+        &__onlayn-list--item-button{
+            margin-bottom:19px;
+        }
+
+        &__onlayn-list--item-elements{
+            margin-top: 20px;
+            float: center;
+        }
+
+
+    }
+
+
+    @media screen and (max-width:426px){
+
+     &__onlayn-list{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    &__onlayn-list--item-button{
+
+        width: 100%;
+    }
+
+    &__onlayn-list--item-buttonBox > &__onlayn-list--item-button:nth-child(2){
+        margin-left: 10px;
+    }
+
+    &__onlayn-list--item-bottonDiv > .btn{
+        padding: 19px 70px;
+    }
+    }
+    @media screen and (max-width:376px){
+        .calculator__onlayn-list--item-elements {
+            padding: 14px 38px;
+        }
+
+       &__onlayn-list--item-bottonDiv > .btn{
+           padding: 19px 50px;
+       }
+       }
+}
