@@ -1,27 +1,72 @@
-.kompanii{
-    padding-top: 80px;
+.kompanii {
+  padding-top: 80px;
+  margin: 0;
+
+  &__heading {
     margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+  }
 
-    &__heading{
-        margin: 0;
-        padding: 0;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 44px;
-    }
+  &__elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    &__elements{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+  &__elements-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    &__elements-box-desc{
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        padding-top: 81px;
-        margin: 0;
+  &__boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__elements-box-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-top: 81px;
+    margin: 0;
+  }
+
+  &__elements-box-descs {
+    margin: 0;
+    padding-top: 15px;
+  }
+
+  @media screen and (max-width: 1025px) {
+    &__elements-box {
+      display: flex;
+      flex-wrap: wrap;
     }
+  }
+
+  @media screen and (max-width: 426px) {
+    &__heading {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    &__elements-box-desc {
+      line-height: 22px;
+      padding-top: 51px;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .kompanii {
+    padding-top: 50px;
+  }
+}
+
+.kompanii__footer {
+  padding-top: 80px !important;
 }
