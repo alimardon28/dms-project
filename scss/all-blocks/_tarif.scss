@@ -1,218 +1,218 @@
-.tarif{
-    padding-top: 80px;
+.tarif {
+  padding-top: 80px;
+  margin: 0;
+
+  &__heading {
     margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+  }
 
-    &__heading{
-        margin: 0;
-        padding: 0;
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 44px;
+  &__komponents {
+    display: flex;
+    flex-direction: column;
+    padding-top: 46px;
+    margin: 0;
+  }
+
+  &__komponents__top {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__komponents__top-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__komponents__top-list-item {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  &__komponents__top-list-item-title {
+    border-bottom: 1px solid #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 12px;
+    margin: 0;
+  }
+
+  &__komponents__top-list-item-desc {
+    padding-top: 24px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__komponents__top-span {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+  }
+
+  &__komponents__center {
+    margin: 0;
+    padding-top: 90px;
+  }
+
+  &__komponents__center-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__komponents__center-list-item {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  &__komponents__center-list-item-title {
+    border-bottom: 1px solid #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 12px;
+    margin: 0;
+  }
+
+  &__komponents__center-list-item-desc {
+    padding-top: 24px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__komponents__center-span {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+  }
+
+  &__komponents__middle {
+    margin: 0;
+    padding-top: 90px;
+  }
+
+  &__komponents__middle-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__komponents__middle-list-item {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  &__komponents__middle-list-item-title {
+    border-bottom: 1px solid #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 12px;
+    margin: 0;
+  }
+
+  &__komponents__middle-list-item-desc {
+    padding-top: 24px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__komponents__middle-span {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+  }
+
+  &__komponents__bottom {
+    padding-top: 90px;
+    margin: 0;
+  }
+
+  &__komponents__bottom-heading {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 426px) {
+    &__komponents__top-list-item-title {
+      font-size: 18px;
+      line-height: 18px;
     }
 
-    &__komponents{
-        display: flex;
-        flex-direction: column;
-        padding-top: 46px;
-        margin: 0;
+    &__komponents__top-list-item-desc {
+      font-size: 15px;
+      line-height: 18px;
     }
 
-    &__komponents__top{
-        margin: 0;
-        padding: 0;
+    &__komponents__top-span {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__komponents__center-list-item-title {
+      font-size: 18px;
+      line-height: 18px;
     }
 
-    &__komponents__top-list{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    &__komponents__center-list-item-desc {
+      font-size: 15px;
+      line-height: 18px;
     }
 
-    &__komponents__top-list-item{
-        text-align: center;
-        padding-bottom: 50px;
+    &__komponents__center-span {
+      font-size: 14px;
+      line-height: 17px;
     }
 
-    &__komponents__top-list-item-title{
-        border-bottom: 1px solid #000;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        padding-bottom: 12px;
-        margin: 0;
+    &__komponents__middle-list-item-title {
+      font-size: 18px;
+      line-height: 18px;
     }
 
-    &__komponents__top-list-item-desc{
-           padding-top: 24px;
-           margin: 0;
-           font-weight: 500;
-           font-size: 18px;
-           line-height: 22px;
+    &__komponents__middle-list-item-desc {
+      font-size: 15px;
+      line-height: 18px;
     }
 
-    &__komponents__top-span{
-         text-align: center;
-         margin: 0;
-         font-weight: 400;
-         font-size: 18px;
-         line-height: 22px;
-         padding: 0;
+    &__komponents__middle-span {
+      font-size: 14px;
+      line-height: 17px;
     }
 
-    &__komponents__center{
-        margin: 0;
-        padding-top:90px;
+    &__komponents__bottom-heading {
+      font-size: 14px;
+      line-height: 17px;
     }
-
-    &__komponents__center-list{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    &__komponents__center-list-item{
-        text-align: center;
-        padding-bottom: 50px;
-    }
-
-    &__komponents__center-list-item-title{
-        border-bottom: 1px solid #000;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        padding-bottom: 12px;
-        margin: 0;
-    }
-
-    &__komponents__center-list-item-desc{
-        padding-top: 24px;
-        margin: 0;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-    }
-
-    &__komponents__center-span{
-        text-align: center;
-        margin: 0;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        padding: 0;
-    }
-
-    &__komponents__middle{
-        margin: 0;
-        padding-top:90px;
-    }
-
-    &__komponents__middle-list{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    &__komponents__middle-list-item{
-        text-align: center;
-        padding-bottom: 50px;
-    }
-
-    &__komponents__middle-list-item-title{
-        border-bottom: 1px solid #000;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        padding-bottom: 12px;
-        margin: 0;
-    }
-
-    &__komponents__middle-list-item-desc{
-        padding-top: 24px;
-        margin: 0;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-    }
-
-    &__komponents__middle-span{
-        text-align: center;
-        margin: 0;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        padding: 0;
-    }
-
-    &__komponents__bottom{
-        padding-top: 90px;
-        margin: 0;
-    }
-
-    &__komponents__bottom-heading{
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
-        margin: 0;
-        padding: 0;
-    }
-
-    @media screen and (max-width:426px) {
-      &__komponents__top-list-item-title{
-        font-size: 18px;
-        line-height: 18px;
-      }
-
-      &__komponents__top-list-item-desc{
-        font-size: 15px;
-        line-height: 18px;
-      }
-
-      &__komponents__top-span{
-        font-size: 14px;
-        line-height:17px;
-      }
-      &__komponents__center-list-item-title{
-        font-size: 18px;
-        line-height: 18px;
-      }
-
-      &__komponents__center-list-item-desc{
-        font-size: 15px;
-        line-height: 18px;
-      }
-
-      &__komponents__center-span{
-        font-size: 14px;
-        line-height:17px;
-      }
-
-      &__komponents__middle-list-item-title{
-        font-size: 18px;
-        line-height: 18px;
-      }
-
-      &__komponents__middle-list-item-desc{
-        font-size: 15px;
-        line-height: 18px;
-      }
-
-      &__komponents__middle-span{
-        font-size: 14px;
-        line-height:17px;
-      }
-
-      &__komponents__bottom-heading{
-        font-size: 14px;
-        line-height:17px;
-      }
-    }
+  }
 }
