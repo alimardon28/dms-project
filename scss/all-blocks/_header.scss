@@ -9,7 +9,11 @@
   width: 100%;
   margin: 0 auto;
 
-  &__container {
+  // &__container {
+
+  // }
+
+  &__navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,6 +88,42 @@
   @media screen and (max-width: 934px) {
     &__navbar-list {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: 934px) {
+    &__navbar {
+      text-align: center;
+    }
+
+    &__navbar-list {
+      display: block;
+      position: fixed;
+      top: 89px;
+      left: -100%;
+      background-color: #14b760;
+      width: 100%;
+      min-height: 100vh;
+      transition: all 0.6s;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__navbar-list--item + &__navbar-list--item {
+      margin-left: 0;
+    }
+
+    &__navbar-list--item {
+      margin-top: 8px;
+      font-size: 24px;
+    }
+
+    &__button {
+      display: block;
+      text-align: center;
+    }
+    &__navbar-list.active {
+      left: 0;
     }
   }
 }
