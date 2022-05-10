@@ -9,9 +9,11 @@
   width: 100%;
   margin: 0 auto;
 
-  // &__container {
-
-  // }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__navbar {
     display: flex;
